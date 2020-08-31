@@ -151,9 +151,9 @@ brew "redis", restart_service: :changed
 brew "fzf"
 brew "bat"
 brew "lf"
-brew "sonos-cli"
 brew "ripgrep"
 brew "tree"
+brew "exa"
 EOF
 
 fancy_echo "Update heroku binary ..."
