@@ -146,6 +146,14 @@ cask "gpg-suite"
 # Databases
 brew "postgres", restart_service: :changed
 brew "redis", restart_service: :changed
+
+# Tools
+brew "fzf"
+brew "bat"
+brew "lf"
+brew "sonos-cli"
+brew "ripgrep"
+brew "tree"
 EOF
 
 fancy_echo "Update heroku binary ..."
@@ -174,6 +182,8 @@ add_or_update_asdf_plugin() {
 source "$HOME/.asdf/asdf.sh"
 add_or_update_asdf_plugin "ruby" "https://github.com/asdf-vm/asdf-ruby.git"
 add_or_update_asdf_plugin "nodejs" "https://github.com/asdf-vm/asdf-nodejs.git"
+add_or_update_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"
+add_or_update_asdf_plugin "elixir" "https://github.com/asdf-vm/asdf-elixir.git"
 
 install_asdf_language() {
   local language="$1"
