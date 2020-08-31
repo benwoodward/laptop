@@ -154,6 +154,7 @@ brew "lf"
 brew "ripgrep"
 brew "tree"
 brew "exa"
+brew "diff-so-fancy"
 EOF
 
 fancy_echo "Update heroku binary ..."
